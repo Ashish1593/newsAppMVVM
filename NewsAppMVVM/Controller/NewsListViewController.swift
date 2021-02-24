@@ -20,7 +20,7 @@ class NewsListViewController: UITableViewController {
     
     func initialSetup(){
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=7786996c8d704d89a59d5ead03428e2e")!
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=yourkey")!
         WebService().getArticles(url: url) { articles in
             
             if let articles = articles {
